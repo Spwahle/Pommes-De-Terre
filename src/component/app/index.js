@@ -8,6 +8,7 @@ import Drinks from '../drinks';
 import Gallery from '../gallery';
 import Mailing from '../mailing';
 import Directions from '../directions';
+import About from '../about';
 import Footer from '../footer';
 
 
@@ -19,6 +20,12 @@ class App extends React.Component {
         <div >
           <Navbar / >
              //HERO IMAGE
+          <Route exact path = "/menu"
+            component = { Menu }/> ;
+          <Route exact path = "/mailing"
+            component = { Mailing }/> ;
+          <Route exact path = "/menu"
+            component = { Menu }/> ;
           <Route exact path = "/menu"
             component = { Menu }/> ;
           <Route exact path = "/drinks"
