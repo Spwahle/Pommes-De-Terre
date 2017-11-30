@@ -1,38 +1,32 @@
 {
   "name": "pommes-de-terre",
   "version": "1.0.0",
-  "description": "restaurant website react/node",
-  "main": "index.js",
-  "scripts": {
-    "scripts": {
-      "build": "webpack",
-      "watch": "webpack-dev-server --inline --hot",
-      "test": "jest",
-      "test:watch": "jest --watchAll",
-      "heroku-postbuild": "webpack -p --progress"
-    },
-    "jest": {
-      "globals": {
-        "__DEBUG__": false,
-        "process.env": {
-          "NODE_ENV": "testing"
-        }
-      },
-      "verbose": true,
-      "collectCoverage": true,
-      "coverageDirectory": "./coverage"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Spwahle/Pommes-De-Terre.git"
-    },
-    "author": "Shaun Wahle",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/Spwahle/Pommes-De-Terre/issues"
-    },
-    "homepage": "https://github.com/Spwahle/Pommes-De-Terre#readme"
+  "engines": {
+    "node": "8.1.2"
   },
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack-dev-server --inline --hot",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "heroku-postbuild": "webpack -p --progress"
+  },
+  "jest": {
+    "globals": {
+      "__DEBUG__": false,
+      "process.env": {
+        "NODE_ENV": "testing"
+      }
+    },
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage"
+  },
+  "keywords": [],
+  "author": "Shaun Wahle",
+  "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.137.0",
     "babel-core": "^6.26.0",
@@ -48,7 +42,7 @@
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
     "material-ui": "^0.19.4",
-    "material-ui-icons": "^1.0.0-beta.15",
+    "material-ui-icons": "^1.0.0-beta.17",
     "node-sass": "^4.5.3",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.3",
